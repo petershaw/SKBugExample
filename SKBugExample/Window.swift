@@ -11,7 +11,7 @@ import SpriteKit
 
 class Window: NSWindowController {
 
-    @IBOutlet weak var animationView: SKView!
+    //@IBOutlet weak var animationView: SKView!
     
     override func windowDidLoad() {
         super.windowDidLoad()

@@ -7,7 +7,6 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Window" customModule="SKBugExample" customModuleProvider="target">
             <connections>
-                <outlet property="animationView" destination="jWh-LS-wLZ" id="3nx-7U-jfB"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
             </connections>
         </customObject>

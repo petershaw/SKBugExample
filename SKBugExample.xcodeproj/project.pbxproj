@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		01F424D21C74E2BD007CB351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424D11C74E2BD007CB351 /* AppDelegate.swift */; };
 		01F424D61C74E2BD007CB351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F424D51C74E2BD007CB351 /* Assets.xcassets */; };
-		01F424E11C74E3FE007CB351 /* TestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 01F424E01C74E3FE007CB351 /* TestScene.sks */; };
-		01F424E31C74E451007CB351 /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424E21C74E451007CB351 /* TestScene.swift */; };
 		01F424E61C74EA65007CB351 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F424E41C74EA65007CB351 /* MainMenu.xib */; };
 		01F424E71C74EA65007CB351 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424E51C74EA65007CB351 /* StatusMenuController.swift */; };
 		01F424F91C74F509007CB351 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424F71C74F509007CB351 /* Window.swift */; };
@@ -22,8 +20,6 @@
 		01F424D11C74E2BD007CB351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01F424D51C74E2BD007CB351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01F424DA1C74E2BD007CB351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01F424E01C74E3FE007CB351 /* TestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene.sks; sourceTree = "<group>"; };
-		01F424E21C74E451007CB351 /* TestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
 		01F424E41C74EA65007CB351 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
 		01F424E51C74EA65007CB351 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
 		01F424F71C74F509007CB351 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
@@ -62,7 +58,6 @@
 			children = (
 				01F424D11C74E2BD007CB351 /* AppDelegate.swift */,
 				01F424FB1C74F5C9007CB351 /* StatusBar */,
-				01F424FC1C74F5DB007CB351 /* Animation */,
 				01F424F01C74F096007CB351 /* Resources */,
 				01F424F71C74F509007CB351 /* Window.swift */,
 				01F424F81C74F509007CB351 /* Window.xib */,
@@ -86,15 +81,6 @@
 				01F424E51C74EA65007CB351 /* StatusMenuController.swift */,
 			);
 			name = StatusBar;
-			sourceTree = "<group>";
-		};
-		01F424FC1C74F5DB007CB351 /* Animation */ = {
-			isa = PBXGroup;
-			children = (
-				01F424E01C74E3FE007CB351 /* TestScene.sks */,
-				01F424E21C74E451007CB351 /* TestScene.swift */,
-			);
-			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +142,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F424E11C74E3FE007CB351 /* TestScene.sks in Resources */,
 				01F424FA1C74F509007CB351 /* Window.xib in Resources */,
 				01F424D61C74E2BD007CB351 /* Assets.xcassets in Resources */,
 				01F424E61C74EA65007CB351 /* MainMenu.xib in Resources */,
@@ -172,7 +157,6 @@
 			files = (
 				01F424D21C74E2BD007CB351 /* AppDelegate.swift in Sources */,
 				01F424E71C74EA65007CB351 /* StatusMenuController.swift in Sources */,
-				01F424E31C74E451007CB351 /* TestScene.swift in Sources */,
 				01F424F91C74F509007CB351 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
