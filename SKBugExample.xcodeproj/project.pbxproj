@@ -8,18 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		01F424D21C74E2BD007CB351 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424D11C74E2BD007CB351 /* AppDelegate.swift */; };
-		01F424D41C74E2BD007CB351 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424D31C74E2BD007CB351 /* ViewController.swift */; };
 		01F424D61C74E2BD007CB351 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01F424D51C74E2BD007CB351 /* Assets.xcassets */; };
-		01F424D91C74E2BD007CB351 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01F424D71C74E2BD007CB351 /* Main.storyboard */; };
+		01F424E11C74E3FE007CB351 /* TestScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 01F424E01C74E3FE007CB351 /* TestScene.sks */; };
+		01F424E31C74E451007CB351 /* TestScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424E21C74E451007CB351 /* TestScene.swift */; };
+		01F424E61C74EA65007CB351 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F424E41C74EA65007CB351 /* MainMenu.xib */; };
+		01F424E71C74EA65007CB351 /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424E51C74EA65007CB351 /* StatusMenuController.swift */; };
+		01F424F91C74F509007CB351 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01F424F71C74F509007CB351 /* Window.swift */; };
+		01F424FA1C74F509007CB351 /* Window.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01F424F81C74F509007CB351 /* Window.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01F424CE1C74E2BD007CB351 /* SKBugExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SKBugExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01F424D11C74E2BD007CB351 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		01F424D31C74E2BD007CB351 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		01F424D51C74E2BD007CB351 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		01F424D81C74E2BD007CB351 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		01F424DA1C74E2BD007CB351 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01F424E01C74E3FE007CB351 /* TestScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TestScene.sks; sourceTree = "<group>"; };
+		01F424E21C74E451007CB351 /* TestScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestScene.swift; sourceTree = "<group>"; };
+		01F424E41C74EA65007CB351 /* MainMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainMenu.xib; sourceTree = "<group>"; };
+		01F424E51C74EA65007CB351 /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		01F424F71C74F509007CB351 /* Window.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Window.swift; sourceTree = "<group>"; };
+		01F424F81C74F509007CB351 /* Window.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Window.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,12 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				01F424D11C74E2BD007CB351 /* AppDelegate.swift */,
-				01F424D31C74E2BD007CB351 /* ViewController.swift */,
-				01F424D51C74E2BD007CB351 /* Assets.xcassets */,
-				01F424D71C74E2BD007CB351 /* Main.storyboard */,
-				01F424DA1C74E2BD007CB351 /* Info.plist */,
+				01F424FB1C74F5C9007CB351 /* StatusBar */,
+				01F424FC1C74F5DB007CB351 /* Animation */,
+				01F424F01C74F096007CB351 /* Resources */,
+				01F424F71C74F509007CB351 /* Window.swift */,
+				01F424F81C74F509007CB351 /* Window.xib */,
 			);
 			path = SKBugExample;
+			sourceTree = "<group>";
+		};
+		01F424F01C74F096007CB351 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				01F424DA1C74E2BD007CB351 /* Info.plist */,
+				01F424D51C74E2BD007CB351 /* Assets.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		01F424FB1C74F5C9007CB351 /* StatusBar */ = {
+			isa = PBXGroup;
+			children = (
+				01F424E41C74EA65007CB351 /* MainMenu.xib */,
+				01F424E51C74EA65007CB351 /* StatusMenuController.swift */,
+			);
+			name = StatusBar;
+			sourceTree = "<group>";
+		};
+		01F424FC1C74F5DB007CB351 /* Animation */ = {
+			isa = PBXGroup;
+			children = (
+				01F424E01C74E3FE007CB351 /* TestScene.sks */,
+				01F424E21C74E451007CB351 /* TestScene.swift */,
+			);
+			name = Animation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +129,7 @@
 				TargetAttributes = {
 					01F424CD1C74E2BD007CB351 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = SR2JMV9NNY;
 					};
 				};
 			};
@@ -119,8 +156,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01F424E11C74E3FE007CB351 /* TestScene.sks in Resources */,
+				01F424FA1C74F509007CB351 /* Window.xib in Resources */,
 				01F424D61C74E2BD007CB351 /* Assets.xcassets in Resources */,
-				01F424D91C74E2BD007CB351 /* Main.storyboard in Resources */,
+				01F424E61C74EA65007CB351 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,23 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01F424D41C74E2BD007CB351 /* ViewController.swift in Sources */,
 				01F424D21C74E2BD007CB351 /* AppDelegate.swift in Sources */,
+				01F424E71C74EA65007CB351 /* StatusMenuController.swift in Sources */,
+				01F424E31C74E451007CB351 /* TestScene.swift in Sources */,
+				01F424F91C74F509007CB351 /* Window.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		01F424D71C74E2BD007CB351 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01F424D81C74E2BD007CB351 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		01F424DB1C74E2BD007CB351 /* Debug */ = {
@@ -234,6 +264,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SKBugExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
@@ -246,6 +277,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SKBugExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";

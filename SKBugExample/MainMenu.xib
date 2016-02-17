@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="NSApplication">
+            <connections>
+                <outlet property="delegate" destination="Voe-Tx-rLC" id="GzC-gU-4Uq"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SKBugExample" customModuleProvider="target"/>
+        <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+        <menu id="2Ci-Tq-jmM">
+            <items>
+                <menuItem title="show" image="NSFollowLinkFreestandingTemplate" tag="1" id="Vq1-8x-zaY">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="showClicked:" target="MKg-hx-Po7" id="IeG-zC-rm6"/>
+                    </connections>
+                </menuItem>
+                <menuItem title="Quit" image="NSStopProgressFreestandingTemplate" id="V9W-z0-6Ck">
+                    <modifierMask key="keyEquivalentModifierMask"/>
+                    <connections>
+                        <action selector="quitClicked:" target="MKg-hx-Po7" id="YOv-bY-bKb"/>
+                    </connections>
+                </menuItem>
+            </items>
+            <connections>
+                <binding destination="-3" name="font" keyPath="self.menu" id="NYY-ws-Ah9"/>
+            </connections>
+            <point key="canvasLocation" x="353.5" y="332.5"/>
+        </menu>
+        <customObject id="MKg-hx-Po7" customClass="StatusMenuController" customModule="SKBugExample" customModuleProvider="target">
+            <connections>
+                <outlet property="menu" destination="2Ci-Tq-jmM" id="mae-TE-vSb"/>
+            </connections>
+        </customObject>
+    </objects>
+    <resources>
+        <image name="NSFollowLinkFreestandingTemplate" width="14" height="14"/>
+        <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
+    </resources>
+</document>
